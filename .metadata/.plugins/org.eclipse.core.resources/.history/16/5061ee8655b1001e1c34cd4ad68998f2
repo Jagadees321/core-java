@@ -1,0 +1,20 @@
+package collections;
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
+public class Queue1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Queue<Integer>a=new LinkedList<>();
+        a.add(7);
+        a.add(8);
+        int k=a.poll();
+        System.out.println(k);
+        Stack<Integer>s=new Stack<>();
+        
+	}
+
+}

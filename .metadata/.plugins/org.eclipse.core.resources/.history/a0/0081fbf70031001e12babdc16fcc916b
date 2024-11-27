@@ -1,0 +1,18 @@
+package collections.setinterface;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Treesetprb {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<String> s=new TreeSet<>();
+		s.add("ab");
+		s.add("bc");
+		s.add("ca");
+		System.out.println(s);
+
+	}
+
+}

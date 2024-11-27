@@ -1,0 +1,42 @@
+package com.jsp.sixtonine;
+
+import java.util.Scanner;
+
+public class SecondhightestPalindrome {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		int l=s.nextInt();
+		int h=s.nextInt();
+		//boolean n=isPalindrome(252);
+		//System.out.println(n);
+		int count=0;
+		int k=0;
+		for(int i=h;i>=l;i--) 
+		{
+			
+			if(isPalindrome(i)) {
+				k=i;
+				count++;
+				if(count==2) {
+					System.out.println(k);
+					return;
+				}
+				
+			}		
+		}
+		//System.out.println(k);		
+
+	}
+	public static  boolean isPalindrome(int n) {
+		int temp=n;
+		int sum=0;
+		while(n>0) {
+			int r=n%10;
+			sum=(sum*10)+r;
+			n=n/10;
+		}
+		return temp==sum;
+	}
+
+}

@@ -1,0 +1,52 @@
+package interviewpraparation;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+
+public class Solution {
+    public static boolean isFrequencyUnique(int n, int[] arr) {
+        // code here
+        HashMap<Integer,Integer>map=new HashMap<>();
+        for(int i=0;i<n;i++)
+        {
+            if(map.get(arr[i])==null)
+            {
+                map.put(arr[i],1);
+                //System.out.println("=>"+map);
+                
+            }
+            else{
+            	//System.out.println(map);
+            	System.out.println(map.get(arr[i]));
+                map.put(arr[i],map.get(arr[i])+1);
+                
+            }
+        }
+        HashSet<Integer>set=new HashSet<>();
+        for(Map.Entry<Integer,Integer>m:map.entrySet())
+        {
+           if(set.contains(m.getValue())) 
+           {
+               return false;
+           }
+           set.add(m.getValue());
+        }
+        return true;
+        
+    }
+    public static void main(String[] args) {
+    	int[] a= {6,2,6,3,4};
+    	boolean b=isFrequencyUnique(5,a);
+    	if(!b) {
+    		System.out.println("equal");
+    		
+    	}
+    	else {
+    		System.out.println("not");
+    	}
+    	
+	}
+	
+}
+        

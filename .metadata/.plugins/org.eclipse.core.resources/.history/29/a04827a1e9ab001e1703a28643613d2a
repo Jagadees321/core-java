@@ -1,0 +1,19 @@
+package basicprograms.arrays;
+
+//import java.lang.reflect.Array;
+import java.util.Arrays;
+
+public class JaggedArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int outersize=4;
+		int[][]a=new int[outersize][];
+		
+        System.out.println(a);// a reference
+	}
+	
+	
+	
+
+}

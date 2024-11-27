@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Rotate</title>
+	<style>
+		div
+		{
+			box-shadow:0 0 10px black;
+			width:320px;
+			height:320px;
+			margin:70px auto;
+			overflow:hidden;
+			position:relative;
+		}
+		div:hover
+		{
+			cursor:pointer;
+		}
+		d
+		{
+			width:inherit;
+			height:inherit;
+			filter:grayscale(100%);
+			transition:all 1s linear 2s;
+		}
+		div:hover>img
+		{
+			filter:grayscale(0%);
+			transform:scale(1.4,1.4);
+		}
+		div>#wrapper
+		{
+			background-color:rgba(255,0,0,0.3);
+			position:absolute;
+			top:-70px;
+			left:0px;
+			transition:all 1s linear 1s;
+		}
+		div:hover>#wrapper
+		{
+			transform:translateY(-100%);
+		}
+		div>#left
+		{
+			background-color:brown;
+			position:absolute;
+			top:-70px;
+			left:0px;
+			width:50%;
+			transition:all 1s linear 0s;
+			transform-origin:left;	
+		}
+		div:hover>#left
+		{
+			transform:perspective(200px) rotateY(90deg);
+		}
+		div>#right
+		{
+			background-color:brown;
+			position:absolute;
+			top:-70px;
+			left:50%;
+			width:50%;
+			transition:all 1s linear 0s;
+			transform-origin:right;
+		}
+		div:hover>#right
+		{
+			transform:perspective(200px) rotateY(-90deg);
+		}
+	</style>
+</head>
+<body>
+	<div>S
+		<img src="D:\jagga jsp\html\images\jagga2\jagga4.jpg"width="300px" height="350pxs">
+		<div id="wrapper"></div>
+		<div id="left"></div>
+		<div id="right"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+package com.jsp;
+
+public class Happynum {
+
+	public static void main(String[] args) {
+		
+		int l=2;
+		int h=100;
+		int num;
+		int sum=0;
+		for(int i=l;i<=h;i++) {
+			num=i;
+			sum=isHappy(num);
+			while(sum!=0 && sum!=4) {
+				sum=isHappy(sum);
+				
+			}
+ 			  
+			
+			
+			
+		}
+		System.out.println(sum);
+		
+
+	}
+	public static int isHappy(int n) {
+		int r=0;
+		int sum=0;
+		while(n>0) {
+			r=n%10;
+			sum=sum+(r*r);
+			n=n/10;
+			
+		}
+		return sum;
+	}
+
+}
+
+//if(sum==1) {
+//	System.out.println("happy num");
+	
+//}
+//else {
+	//System.out.println("not happy");
+//}

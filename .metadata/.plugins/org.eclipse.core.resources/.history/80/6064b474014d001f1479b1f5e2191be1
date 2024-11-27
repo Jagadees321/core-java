@@ -1,0 +1,14 @@
+package jsp.practice;
+
+public class Jagga {
+    int a;
+	public Jagga(int a) {
+		super();
+		this.a = a;
+	}
+	public static void main(String[] args) {
+		System.out.println((char)104);
+		System.out.println(104);
+	}
+
+}

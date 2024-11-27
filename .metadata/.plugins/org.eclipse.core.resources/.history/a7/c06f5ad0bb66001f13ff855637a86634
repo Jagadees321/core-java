@@ -1,0 +1,26 @@
+package arrays1;
+
+public class Matrixleetcode {
+	
+	public static void main(String[] args) {
+		int [][] a= {{1,22,3},{4,5,6},{7,8,9}};
+		System.out.println(isarrayssortedinmatrix(a));
+	}
+	
+	public static boolean isarrayssortedinmatrix(int[][] a) {
+		int lastele=0;
+		for(int i=0;i<a.length;i++) {
+			for(int j=0;j<a[i].length-1;j++) {
+				if(j==a[i].length-2) {
+					lastele=a[i][j+1];
+					System.out.println(lastele);
+				}
+				if(a[i][j]>a[i][j+1]) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.jsp.strings;
+
+public class Anagram2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="java is easy";
+		String[]a=s.split("a");
+		//System.out.println(a[1]);
+		for(String b: a) {
+			System.out.println(b);
+			
+		}
+
+	}
+
+}

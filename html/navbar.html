@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>css properties</title>
+	<style type="text/css">
+		body{
+			background-color: rgb(222, 91, 91);
+			background-image: url("D:\\jagga jsp\\html\\images\\jagga2\\jagga4.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-attachment: fixed;
+
+		}
+		.container{
+			background-color:black ;
+			width: 994px;
+			margin: 10px auto;
+			padding: 10px;
+			text-align: center;
+			border-radius: 100px;
+		}
+		a{
+			background-color: white;
+			text-decoration: none;
+			margin: 31px;
+			padding: 5px 15px;
+			display: inline-block;
+			width: 100px;
+			border-radius: 20px;
+			animation:myfirst 2s linear 4s infinite alternate ;
+
+		}
+		@keyframes myfirst{
+			0% {background-color: red; left: 0px;top: 0px}
+			25% {background-color: yellowgreen; left: 0px;top: 0px}
+			50% {background-color: blue; left: 0px;top: 0px}
+			75% {background-color: green; left: 0px;top: 0px}
+			100% {background-color:#2be252 ; left: 0px;top: 0px}
+
+		}
+		a:hover{
+			box-shadow: 0px 100px 100px white;
+		}
+		.b{
+			margin-left: 49px;
+			width: 100px;
+			background-color: white;
+			background-position: 0px 0px;
+			background-attachment: fixed;
+			background-size: cover;
+			background-image: 100px;
+
+		}
+	</style>
+</head>
+<body >
+	<div class="container">
+		<a href="">Home</a>
+		<a href="">about</a>
+		<a href="">Update</a>
+		<a href="">Gallary</a>
+		<a href="">Contact us</a>
+    </div>
+
+	
+    
+
+</body>
+</html>

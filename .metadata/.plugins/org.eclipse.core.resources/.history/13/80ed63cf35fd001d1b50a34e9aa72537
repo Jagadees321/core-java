@@ -1,0 +1,26 @@
+package com.jsp.oops;
+
+public class Earlybind 
+{
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		A.m1();
+		B.m1();
+
+	}
+}
+class A{
+	static void m1() {
+		System.out.println("a in m1");
+		
+	}
+		
+	
+}
+class B{
+	static void m1() {
+		System.out.println("b in m1");
+	}
+}

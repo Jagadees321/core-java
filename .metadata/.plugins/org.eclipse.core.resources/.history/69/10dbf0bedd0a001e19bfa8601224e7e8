@@ -1,0 +1,29 @@
+package com.jsp.sixtonine;
+
+public class Largestprime {
+
+	public static void main(String[] args) {
+		int l=2;
+		int h=100;
+		//int n=0;
+		for(int i=h;i>=l;i--) {
+			if(isPrime(i)) {
+				System.out.println(i);
+				return;
+			}
+			
+		}
+		
+	}
+	 public static boolean isPrime(int n) {
+	    	if(n<2)return false;
+	    	for(int i=2;i<=n/2;i++) {
+	    		if(n%i==0) {
+	    			return false;
+	    		}
+	    		
+	    	}
+	    	return true;
+	    }
+
+}

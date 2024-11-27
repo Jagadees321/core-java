@@ -1,0 +1,20 @@
+package collections.setinterface;
+
+import java.util.HashSet;
+
+public class Hashsettprb {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashSet<String> h=new HashSet<>();
+		h.add("jagga");
+		h.add("apple");
+		h.add("royal");
+		h.add("royal");
+		System.out.println(h);
+		
+		
+
+	}
+
+}

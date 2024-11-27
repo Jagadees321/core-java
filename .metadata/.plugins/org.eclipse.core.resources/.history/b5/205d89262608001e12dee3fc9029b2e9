@@ -1,0 +1,51 @@
+package jsp.practice;
+
+public class Arraylist {
+	private Object[]a;
+	private int p=0;
+	public Arraylist(){
+		a=new Object[5];
+		p=0;
+		
+	}
+	public void add(int n) {
+		if(p>a.length) increase();
+		a[p++]=n;
+	}
+	private void increase() {
+		Object[] temp=new Object[a.length+2];
+		System.arraycopy(a, 0, temp, 0, a.length);
+		a=temp;
+		
+	}
+	public int size() {
+		return p;
+	}
+	public Object get(int ind) {
+		if(ind>=a.length || ind<=-1) {
+			throw new IndexOutOfBoundsException();
+		}
+		return a[ind];
+	}
+	
+	public void add(int ind,Object e) {
+		if(ind>=a.length || ind<=-1) {
+			throw new IndexOutOfBoundsException();
+		}
+		if(p>=a.length) increase();
+		for(int i=a.length-1;i>=0;i--) {
+			a[p+1]=a[p];
+		}
+		a[ind]=e;
+		p++;
+	}
+	
+	public static void main(String[] args) 
+	{
+		Arraylist a1=new Arraylist();
+		a1.add(12);
+		a1.add(23);
+		System.out.println(a1.get(0));
+	}
+
+}

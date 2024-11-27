@@ -1,0 +1,28 @@
+package com.jsp.rexex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Dot {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Pattern p=Pattern.compile("[0-9]{4}");
+		Matcher m=p.matcher(s1.nextLine());
+		String s = "h";
+		while(m.matches()) 
+		{
+			n1=m.group();
+			System.out.println(s);
+			return;
+			
+			
+			
+			
+		}
+		//System.out.println(s);
+
+	}
+
+}
+

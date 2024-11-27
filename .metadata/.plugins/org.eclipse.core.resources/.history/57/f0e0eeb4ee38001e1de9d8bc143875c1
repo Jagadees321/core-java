@@ -1,0 +1,17 @@
+package patterns;
+
+public class B {
+	int a;
+    B(int b){
+    	a=b;
+    	System.out.println("i am constrctor");
+    }
+    
+	public static void main(String[] args) {
+		B b=new B(9);
+		System.out.println(b);
+		System.out.println(b.a);
+		
+	}
+
+}

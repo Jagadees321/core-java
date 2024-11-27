@@ -1,0 +1,36 @@
+package com.oops.ss;
+
+public class Cons {
+	
+
+    int i;
+    int j;
+	 Cons(int a,int b){
+		System.out.println("i am 2 argument constructor");
+		i=a;
+		j=b;
+	}
+
+
+	Cons(Cons b){
+	    System.out.println("I am single argument");
+		i=b.i;
+		j=b.j;
+	}
+	
+	
+
+	public static void main(String[] args) {
+		Cons a=new Cons(5,7);
+		System.out.println(a.i);
+		System.out.println(a.j);
+		
+		Cons c=new Cons(a);
+		System.out.println(c.i);
+		System.out.println(c.j);
+
+
+		
+	}
+
+}

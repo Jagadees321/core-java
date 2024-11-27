@@ -1,0 +1,20 @@
+package com.jsp.arrays;
+
+import java.util.Arrays;
+
+public class Demo2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int []a= new int[3];
+		
+		a[0]=2;
+		a[1]=6;
+		a[2]=4;
+		int[]b=null;
+		System.arraycopy(a, 1, b, 0, a.length);
+		System.out.println(Arrays.toString(b));
+     
+	}
+
+}

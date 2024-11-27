@@ -1,0 +1,19 @@
+package com.jsp.oops2;
+
+class Bike
+{  
+	  void run(){
+		  System.out.println("running");
+		  } 
+}  
+class Pulsar extends Bike
+{
+	void run() {
+		System.out.println("start running");
+	}
+	public static void main(String[] args) {
+		Bike b=new Pulsar();
+	}
+
+}  
+	

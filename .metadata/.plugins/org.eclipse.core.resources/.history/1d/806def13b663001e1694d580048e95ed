@@ -1,0 +1,16 @@
+package stringbufferandbuilder;
+
+public class Stringbuffermethods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        StringBuffer b=new StringBuffer();
+        StringBuilder a=new StringBuilder();
+        String a1="A";
+        a1=a1+"";
+        String a2="A";
+        
+        System.out.println(a1.equals(a2));
+	}
+
+}

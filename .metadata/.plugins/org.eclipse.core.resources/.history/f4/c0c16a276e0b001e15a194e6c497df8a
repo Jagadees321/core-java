@@ -1,0 +1,21 @@
+package com.jsp.strings;
+
+import java.util.Stack;
+
+public class Balancing {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public boolean isbalancing(String s) {
+		Stack<Character> s1=new Stack<Character>();
+		for(int i=0;i<s.length();i++) {
+			char c=s.charAt(i);
+			if(c=='{' || c=='{' || c=='(') {
+				//s1.push();
+			}
+		}
+	}
+
+}

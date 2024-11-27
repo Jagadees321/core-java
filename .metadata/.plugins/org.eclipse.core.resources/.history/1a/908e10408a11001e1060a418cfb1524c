@@ -1,0 +1,75 @@
+package com.jsp.collections.binarytree;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Binarytree {
+	private Node root;
+	private boolean flag;
+	private int count;
+	
+	public boolean add(int k) {
+		flag=true;
+		root=addNode(root,k);
+		return flag;
+	}
+	public Node addNode(Node n, int k) 
+	{
+		if(n==null) {
+			n=new Node(k);
+			count++;
+			return n;
+		}
+		if(n.key>k) {
+			n.left=addNode(n.left,k);
+		}
+		else if(n.key<k) {
+			n.right=addNode(n.right,k);
+		}
+		else {
+			flag=false;
+		}
+		
+	
+		return n;
+	}
+	public int size() {
+		return count;
+	}
+	public void levelOrder() {
+		Queue<Node> q=new LinkedList<>();
+		if(root!=null) q.add(root);
+		while(!q.isEmpty()) {
+			Node n=q.poll();
+			System.out.print(n.key+"  ");
+			if(n.left!=null)q.add(n.left);
+			if(n.right!=null)q.add(n.right);
+		}
+		System.out.println();
+	}
+	
+	public void preOrder() {
+		preOrderTraverse(root);
+	}
+	private void preOrderTraverse(Node n) {
+		if(n==null) return;
+		
+		System.out.print(n.key+"  ");
+		preOrderTraverse(n.left);
+		preOrderTraverse(n.right);
+		
+	}
+	public void postOrder() {
+		postOrdertravel(root);
+		
+	}
+	private void postOrdertravel(Node n) {
+		
+		if(n==null) return;
+		postOrdertravel(n.left);
+		postOrdertravel(n.right);
+		System.out.print(n.key+" ");
+		
+	}
+
+}

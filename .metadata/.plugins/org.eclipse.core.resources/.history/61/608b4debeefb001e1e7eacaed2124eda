@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author AtluriMukesh
+ *
+ */
+module Basicjava {
+	requires java.mail;
+}

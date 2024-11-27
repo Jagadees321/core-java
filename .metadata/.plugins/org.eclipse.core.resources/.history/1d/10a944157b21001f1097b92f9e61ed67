@@ -1,0 +1,15 @@
+package com.jsp.strings;
+
+import java.util.Arrays;
+
+public class C 
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		String s="i like java";
+		String[]s1=s.split(" ");
+		System.out.println(Arrays.toString(s1));
+		
+	}
+}

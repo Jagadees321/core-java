@@ -1,0 +1,10 @@
+package jsp.practice;
+
+public class Insta {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.jsp2.komola;
+
+public class B {
+    static int b=9;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=7;
+		System.out.println(a);
+        System.out.println(b);
+	}
+
+}

@@ -1,0 +1,24 @@
+package jsp.practice;
+
+public class Mock1 {
+
+	void k1(K k) {
+		System.out.println("k1 mock1 K k");
+		
+	}
+	void k1(J j) {
+		System.out.println("k1 mock1 J j");
+	}
+
+}
+class Mock2 extends Mock1{
+	void k1(K k) {
+		System.out.println("k2 mock1 K k");
+		
+	}
+	void k1(J j) {
+		System.out.println("k2 mock1 J j");
+	}
+
+	
+}

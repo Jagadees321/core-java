@@ -1,0 +1,39 @@
+package leetcode;
+
+public class Revnum {
+
+	public static void main(String[] args) {
+		int n=1534236469;
+		System.out.println(numrev(n));
+
+	}
+	
+	public static long numrev(int x) {
+//		int temp=n;
+//		long rev=0;
+//		if(n<0) n=-n;
+//		
+//		while(n>0) {
+//			int r=n%10;
+//			rev=(rev*10)+r;
+//			System.out.println(rev);
+//			n=n/10;
+//		}
+//		if(temp<0) {
+//			rev=(-(rev));
+//		}
+//		
+//		return rev;
+		 int t=x;
+	       // if(x<0) x=-x;
+	        long rev=0;
+	        while(x!=0){
+	           int r=x%10;
+	           rev=(rev*10)+r;
+	           x=x/10;
+	        }
+	        if(rev>Integer.MAX_VALUE || rev<Integer.MIN_VALUE) return 0;
+	        return (int)rev;
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.jsp;
+
+public class Strong {
+	public static void main(String[] args) {
+		int n=145;
+		int sum=0;
+		while(n>0)
+		{
+			int d=n%10;
+			int fact=1;
+			for(int i=1; i <=d;i++)
+			{
+				fact*=i;
+			}
+			sum=sum+fact;
+			
+		}
+		if(n==sum) {
+			System.out.println("strong");
+		}
+		else {
+			System.out.println("not strong");
+		}
+	}
+
+}

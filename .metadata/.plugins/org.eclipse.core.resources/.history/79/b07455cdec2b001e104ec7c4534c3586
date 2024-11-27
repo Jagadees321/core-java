@@ -1,0 +1,27 @@
+package Mapinterfacepre;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Hashmap1 {
+
+	public static void main(String[] args) {
+		Map<Integer,String>m=new HashMap<>();
+		m.put(1, "sehwag");
+		m.put(2, "gambhir");
+		m.put(3, "yuvi");
+		m.put(4, "raina");
+		m.put(5, "pant");
+		m.put(6, "hardik");
+		System.out.println(m);
+		System.out.println(m.containsKey(7));
+		System.out.println(m.containsValue("pant"));
+		System.out.println(m.get(2));
+		System.out.println(m.keySet());
+		
+		
+		
+
+	}
+
+}

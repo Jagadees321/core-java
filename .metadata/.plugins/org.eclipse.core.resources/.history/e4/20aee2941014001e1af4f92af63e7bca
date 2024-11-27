@@ -1,0 +1,48 @@
+package com.filehandling1;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Reader {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		File f=new File("D:\\jagga jsp\\File\\file1.txt");
+		f.createNewFile();
+//		FileWriter w=new FileWriter(f);
+//		w.write("abc");
+//		char []a= {'a','b','c'};
+//		w.write(65);
+//		w.write(a);
+//		
+//		w.close();
+//		BufferedWriter b=new BufferedWriter(new FileWriter("D:\\jagga jsp\\File\\file1.txt",true));
+//		b.write(a);
+//		b.newLine();
+//		b.write(9765);
+//		b.newLine();
+//		b.write("i am jagadeesh");
+//		b.close();
+//		
+//        FileReader f1=new FileReader("D:\\jagga jsp\\File\\file1.txt");
+//        int i=(char)f1.read();
+//        System.out.println((char)i);
+//       
+//       while(i>0) {
+//        	char c=(char)i;
+//        	System.out.print(c);
+//        	i= f1.read();
+//        }
+//       // f1.close();
+//        
+        BufferedReader b=new BufferedReader(new FileReader("D:\\jagga jsp\\File\\file1.txt"));
+       // System.out.println(b.lines());
+        b.readLine();
+        System.out.println(b.readLine());
+	}
+
+}

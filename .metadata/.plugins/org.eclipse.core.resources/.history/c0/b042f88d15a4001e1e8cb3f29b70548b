@@ -1,0 +1,25 @@
+package innerclasses;
+
+public class Ot {
+	static int a=9;
+
+	Ot() {
+		System.out.println("cons");
+	}
+
+	static class In {
+		void m1() {
+			System.out.println(a);
+		}
+		public static void main(String[] args) {
+			In in = new In();
+			in.m1();
+		}
+
+	}
+
+	public static void main(String[] args) {
+        
+	}
+
+}

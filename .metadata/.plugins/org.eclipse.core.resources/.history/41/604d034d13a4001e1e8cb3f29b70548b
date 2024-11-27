@@ -1,0 +1,12 @@
+package innerclasses;
+
+public class Methodinnerclass {
+    public static void main(String[] args) {
+		class inner{
+			public static void main(String[] args) {
+				System.out.println("hello");
+			}
+		}
+		inner i=new inner();
+	}
+}

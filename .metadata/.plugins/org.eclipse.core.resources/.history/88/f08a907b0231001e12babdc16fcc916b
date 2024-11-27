@@ -1,0 +1,25 @@
+package collections.setinterface;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Treesetprb {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<String> s=new TreeSet<>();
+		s.add("bab");
+		s.add("cbc");
+		s.add("cca");
+		System.out.println(s);
+//		s.remove("cca");
+//		System.out.println(s);
+		for(String a:s) {
+			if(a=="bab") {
+				System.out.println("found");
+			}
+		}
+
+	}
+
+}

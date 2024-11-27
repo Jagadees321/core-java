@@ -1,0 +1,28 @@
+package com.oops.ss;
+
+public class Cons {
+	
+
+
+
+    Cons() {
+
+        System.out.println("i am constructor");
+	}
+    static {
+    	System.out.println("i am static block");
+    }
+	
+	
+
+	public static void main(String[] args) {
+
+
+
+
+
+
+		
+	}
+
+}

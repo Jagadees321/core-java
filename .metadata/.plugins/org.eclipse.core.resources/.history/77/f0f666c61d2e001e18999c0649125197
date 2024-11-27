@@ -1,0 +1,13 @@
+package strings;
+
+public class Passwordextraction {
+
+	public static void main(String[] args) {
+
+        String s1="password is :Jaggu@123";
+        String s2="Jaggu@123";
+        
+
+	}
+
+}

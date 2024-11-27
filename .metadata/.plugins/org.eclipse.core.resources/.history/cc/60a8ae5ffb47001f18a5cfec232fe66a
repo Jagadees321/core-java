@@ -1,0 +1,16 @@
+package Streams.practiceallquestions;
+
+public class Sumofdigitsusingstream {
+	public static void main(String[] args) {
+		 String input = "a1b2c3";
+		 System.out.println(input.chars().toString());
+
+	        int sumOfDigits = input.chars() 
+	                               .filter(Character::isDigit) 
+	                               .map(Character::getNumericValue) 
+	                               .sum(); // Sum the numeric values
+
+	        System.out.println("Sum of digits: " + sumOfDigits); 
+	}
+
+}

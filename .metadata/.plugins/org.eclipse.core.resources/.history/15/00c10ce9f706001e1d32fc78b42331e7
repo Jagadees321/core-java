@@ -1,0 +1,29 @@
+package jsp.practice;
+
+public class Allpallindrome {
+
+	public static void main(String[] args) {
+       String s="malayalam";
+       for(int i=0;i<s.length()-1;i++) {
+    	   for(int j=i+1;i<s.length();j++) {
+    		   if(ispallindrome(s,i,j)) 
+    			   if(j-i>1)
+    			   System.out.println(s.substring(i,j+1));
+    	   }
+       }
+	}
+	public static boolean ispallindrome(String s,int start,int end) {
+		int i=start;
+		int j=end;
+		//char[] a=s.toCharArray();
+		while(i<j) {
+			if(s.charAt(i)!=s.charAt(j)) {
+				return false;
+			}
+			i++;
+			j--;
+		}
+		return true;
+	}
+
+}

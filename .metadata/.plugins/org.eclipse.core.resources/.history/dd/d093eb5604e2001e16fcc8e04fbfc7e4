@@ -1,0 +1,26 @@
+package interviews;
+
+public class CommonSubString {
+
+	public static void main(String[] args) {
+		
+      String s="hello";
+      System.out.println(s.substring(0, 2));
+      
+	}
+	
+	public static String commonsubstr(String s1,String s2,String s3) {
+		for(int i=0;i<s1.length();i++) {
+			
+		}
+		return s3;
+		
+	}
+	public static boolean checksubstr(String s,String s1,int n) {
+		int l=s1.length();
+		String s2=s1.replaceAll(s, "");
+		return  l-n==s2.length() ;
+		
+	}
+
+}

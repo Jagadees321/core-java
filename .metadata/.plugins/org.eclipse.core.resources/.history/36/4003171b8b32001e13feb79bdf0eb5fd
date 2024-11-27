@@ -1,0 +1,21 @@
+package com.oops.ss;
+
+public class Overloading {
+
+	public static void main(String[] args) 
+	{
+		
+      int a=add(5, 4);
+      System.out.println(a);
+	}
+	
+	static int add(int a,int b) 
+	{
+		return a+b;
+	}
+	static int add(int a,int b,int c)
+	{
+		return a+b+c;
+	}
+
+}

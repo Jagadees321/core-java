@@ -1,0 +1,15 @@
+package jsp.practice;
+
+public class Jagga {
+    int a;
+	public Jagga(int a) {
+		super();
+		this.a = a;
+	}
+	public static void main(String[] args) {
+		String s="this is the sentence";
+		String[] s1=s.split(" ");
+		System.out.println(s1);
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.jsp.comparator;
+
+import java.util.Comparator;
+
+public  class Age implements Comparator<Student>{
+
+	@Override
+	public int compare(Student o1, Student o2) {
+		// TODO Auto-generated method stub
+		Student s1=(Student) o1;
+		Student s2=(Student) o2;
+		
+		return s1.getAge()-s2.getAge();
+	}
+
+	
+	
+
+}

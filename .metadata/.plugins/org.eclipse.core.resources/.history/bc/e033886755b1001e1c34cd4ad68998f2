@@ -1,0 +1,16 @@
+package collections;
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
+public class Queue1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Queue<Integer>a=new LinkedList<>();
+        Stack<Integer>s=new Stack<>();
+        
+	}
+
+}

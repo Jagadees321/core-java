@@ -1,0 +1,9 @@
+package com.oops.ss;
+
+public class Ba extends Aa {
+	
+	int mul(int a,int b) {
+		return a*b;
+	}
+
+}

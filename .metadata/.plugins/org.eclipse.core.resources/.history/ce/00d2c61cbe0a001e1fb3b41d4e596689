@@ -1,0 +1,28 @@
+package com.jsp.sixtonine;
+
+import java.util.Scanner;
+
+public class Altprime {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		int l=s.nextInt();
+		int h=s.nextInt();
+		for(int i=l;i<=h;i++) {
+			if(isPrime(i)) {
+				System.out.println(i);
+			}
+		}
+
+	}
+    public static boolean isPrime(int n) {
+    	if(n<2)return false;
+    	for(int i=2;i<=n/2;i++) {
+    		if(n%i==0) {
+    			return false;
+    		}
+    		
+    	}
+    	return true;
+    }
+}
